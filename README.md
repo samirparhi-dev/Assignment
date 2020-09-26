@@ -7,7 +7,7 @@ You can find 2 folder named as :
  
  :file_folder: `Scnario-2`
 
-**Scnario-1** contains `solution1` file which is in `.docx` format . The same file has all the solution along with code snippet required for the explanations. There are few `.png` files which are used i the readme.md for inserting the screenshots.
+**Scnario-1** contains `solution1` file which is in `.docx` format . The same file has all the solution along with code snippet required for the explanations. There are few `.png` files which are used i the `readme.md` for inserting the screenshots.
 
  **Scnario-2** Contains  `solution2` file which is in  `.docx` format  and one `Json` file . The Docx file is for the solution explanation along with the code snippet, However the Json file attached is the ARM template for the Windows VM creation.
 
