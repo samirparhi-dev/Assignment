@@ -3,8 +3,8 @@
 
 You can find 2 folder named as :
 
-* `Scnario 1` 
-* `Scnario 2`
+* `Scnario-1` 
+* `Scnario-2`
 
 **Scnario-1** contains `solution1` file which is in `.docx` format . The same file has all the solution along with code snippet required for the explanations.
 
