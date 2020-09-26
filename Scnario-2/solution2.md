@@ -10,10 +10,10 @@ All the passwords are stored in a Azure Service known as key Vault. The deployme
 
   Below are the required things to create an an ARM template .
 * a. Schema: Describe the properties available in the template
-* b. content version: Versioning  the template
-* c. parameters:  Passing parameter for this template
-* d. variable: Use of variable in this Template dynamically
-* e. output: Return properties after execution of this template
+* b. Content version: Versioning  the template
+* c. Parameters:  Passing parameter for this template
+* d. Variable: Use of variable in this Template dynamically
+* e. Output: Return properties after execution of this template
 * f. Function: Re-usability of the expressions
 * g. Resources(Azure resources like N/w , Subnet, Vm, etc.) : Infra object to be created by execution of this template 
 
@@ -24,8 +24,8 @@ All the passwords are stored in a Azure Service known as key Vault. The deployme
 
 ###### 3) Explain the process and steps to create automated deployment pipeline.
   * step -1: Create a ARM templates
-  * step-2: store it in Git hub
-  * step 3: create Arm Deployment pipeline in Azure DevOps (Please refer to the earlier assignment to see this process). (It should also contain the Resource group creation part)
+  * step-2: Store it in Git hub
+  * step 3: Create Arm Deployment pipeline in Azure DevOps (Please refer to the earlier assignment to see this process). (It should also contain the Resource group creation part)
   * step-4: Trigger the pipeline whenever required to create IaaC
 
 ###### 4) Create a sample ARM template you will use to deploy a Windows VM of any size
@@ -36,7 +36,7 @@ All the passwords are stored in a Azure Service known as key Vault. The deployme
     
 ###### 5) Explain how will you access the password stored in Key Vault and use it as Admin Password in the VM ARM template.
 
-* a. create a key vault first in azure portal using Key vault service.
+* a. Create a key vault first in azure portal using Key vault service.
 * b. Add the secret there by providing the Name and value with Manual Upload option 
 * c. Create Access Policies for this secret  by adding an User , which you want to give access
 * d. Enable Arm Access by going to advanced policies , so that ARM template can access it
@@ -71,7 +71,7 @@ Example :
       }
     }
 ```
-* g. run the below command in the Azure CLI to include parameter template in the Arm template:
+* g. Run the below command in the Azure CLI to include parameter template in the Arm template:
 
 ```shell
 New-AzureRmResourceGroupDeployment -Name ExampleDeployment -ResourceGroupName TestEnv -TemplateFile .\ArmTemplateFile.json -TemplateParameterFile .\ArmParametersFile.json
