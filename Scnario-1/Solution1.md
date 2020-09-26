@@ -88,3 +88,5 @@ stages:
 
 ###### 5)	The deployments to QA and Prod should be enabled with Approvals from approvers only.
 You have to define the deployment approval in the tool , providing the required approver . so that it can be progressed through various stages once the approval is provided in the Azure devOps tool
+
+******************************************************************End Of Document********************************************************************************
