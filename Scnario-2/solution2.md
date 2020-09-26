@@ -30,9 +30,9 @@ All the passwords are stored in a Azure Service known as key Vault. The deployme
 
 ###### 4) Create a sample ARM template you will use to deploy a Windows VM of any size
 
-    Please find `ARMdeployment.json` file the git hub.
+    Please find ARMdeployment.json file the git hub.
     
-    Link :https://github.com/samirparhi-dev/Assignment/blob/master/Scnario-2/ARMdeployment.json
+    https://github.com/samirparhi-dev/Assignment/blob/master/Scnario-2/ARMdeployment.json
     
 ###### 5) Explain how will you access the password stored in Key Vault and use it as Admin Password in the VM ARM template.
 
