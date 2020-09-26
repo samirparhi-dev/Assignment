@@ -11,8 +11,10 @@ The customer is planning to setup Azure DevOps service for below requirements:**
 ###### 1)	The build should trigger as soon as anyone in the dev team checks in code to master branch.
 
 Solution: (From GUI)
+
 Create a pipeline if not already there:
-*Step1: Go to Azure devOps and click on pipeline .
+
+* Step1: Go to Azure devOps and click on pipeline:
 
  
 Now click on create 
@@ -20,8 +22,9 @@ Now click on create
 
  
 * Step 3: select the Default branch as master. When you give this as master, as soon as there ia any commit happens to the master branch the pipeline will trigger.
-```yaml 
+
 Through YAML:
+```yaml 
 trigger:
 - master
 ```
