@@ -12,7 +12,7 @@ The customer is planning to setup Azure DevOps service for below requirements:**
 
 **Solution:**
 
-From GUI
+From GUI:
 
 Create a pipeline if not already there:
 
