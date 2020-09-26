@@ -1,10 +1,7 @@
 
 ## Q1 - SCENARIO
-# _**A car rental company called FastCarz has a .net Web Application and Web API which are recently migrated from on-premise system to Azure cloud using Azure Web App Service
-and Web API Service.
-The on-premises system had 3 environments Dev, QA and Prod.
-The code repository was maintained in TFS and moved to Azure GIT now. The TFS has daily builds which triggers every night which build the solution and copy the build package to drop folder.
-deployments were done to the respective environment manually. The customer is planning to setup Azure DevOps service for below requirements:**_
+## _**A car rental company called FastCarz has a .net Web Application and Web API which are recently migrated from on-premise system to Azure cloud using Azure Web App Service
+and Web API Service.The on-premises system had 3 environments Dev, QA and Prod.The code repository was maintained in TFS and moved to Azure GIT now. The TFS has daily builds which triggers every night which build the solution and copy the build package to drop folder.deployments were done to the respective environment manually. The customer is planning to setup Azure DevOps service for below requirements:**_ 
 
 1)	The build should trigger as soon as anyone in the dev team checks in code to master branch.
 
