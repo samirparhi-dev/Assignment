@@ -15,6 +15,8 @@ Please use the github comment feature to provide your comments.
 
 I frequently Use my github and you can expect the reply sooner to your comment . If you wish to get a faster reply connect me on `samirparhi@gmail.com`
 
+## :pushpin: Note : Please Do not change any formatiing applied here . Please connect me for any changes
+
 
                                                       **Thank You**
 
