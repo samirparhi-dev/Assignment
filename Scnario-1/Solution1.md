@@ -1,5 +1,5 @@
 
-## Q1 - SCENARIO
+# Q1 - SCENARIO
  _**A car rental company called FastCarz has a .net Web Application and Web API which are recently migrated from on-premise system to Azure cloud using Azure Web App Service
 and Web API Service.
 The on-premises system had 3 environments Dev, QA and Prod.
@@ -8,7 +8,7 @@ The TFS has daily builds which triggers every night which build the solution and
 Deployments were done to the respective environment manually. 
 The customer is planning to setup Azure DevOps service for below requirements:**_ 
 
-1)	The build should trigger as soon as anyone in the dev team checks in code to master branch.
+###### 1)	The build should trigger as soon as anyone in the dev team checks in code to master branch.
 
 Solution: (From GUI)
 Create a pipeline if not already there:
@@ -25,7 +25,7 @@ Through YAML:
 trigger:
 - master
 When you specify master under the trigger section of YAML configuration file it will take that as a branch to trigger a pipeline 
-2)	There will be test projects which will create and maintained in the solution along the Web and API. The trigger should build all the 3 projects - Web, API and test.
+###### 2)	There will be test projects which will create and maintained in the solution along the Web and API. The trigger should build all the 3 projects - Web, API and test.
 The build should not be successful if any test fails.
 
 Through YAML:
@@ -37,7 +37,7 @@ Through YAML:
             - stage: test
 
    
-3)	The deployment of code and artifacts should be automated to Dev environment. 
+###### 3)	The deployment of code and artifacts should be automated to Dev environment. 
 Step-1: Create an environment in the azure pipeline, if not there as follows (Choose virtual Machine or Kubernetes) :
  
 
@@ -62,7 +62,7 @@ stages:
             resourceType: VirtualMachine
 
 
-4)	Upon successful deployment to the Dev environment, deployment should be easily promoted to QA and Prod through automated process.
+###### 4)	Upon successful deployment to the Dev environment, deployment should be easily promoted to QA and Prod through automated process.
 
 
 - stage: Test deployment
@@ -82,5 +82,5 @@ stages:
                   name:  Prod
                   resourceType: VirtualMachine
 
-5)	The deployments to QA and Prod should be enabled with Approvals from approvers only.
+###### 5)	The deployments to QA and Prod should be enabled with Approvals from approvers only.
 You have to define the deployment approval in the tool , providing the required approver . so that it can be progressed through various stages once the approval is provided in the Azure devOps tool
