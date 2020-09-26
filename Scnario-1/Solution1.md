@@ -24,7 +24,7 @@ Now click on create
 Through YAML:
 trigger:
 - master
-```yaml 
+```
 When you specify master under the trigger section of YAML configuration file it will take that as a branch to trigger a pipeline 
 ###### 2)	There will be test projects which will create and maintained in the solution along the Web and API. The trigger should build all the 3 projects - Web, API and test.
 The build should not be successful if any test fails.
