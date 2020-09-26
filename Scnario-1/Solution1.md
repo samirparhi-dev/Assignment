@@ -18,12 +18,16 @@ Create a pipeline if not already there:
 
 * Step1: Go to Azure devOps and click on pipeline:
 
+![alt text](https://github.com/samirparhi-dev/Assignment/blob/master/Scnario-1/Picture1.png?raw=true)
  
-Now click on create 
+   Now click on create 
 * Step 2: provide the source code repository type :  
 
+ ![alt text](https://github.com/samirparhi-dev/Assignment/blob/master/Scnario-1/Picture2.png?raw=true)
  
 * Step 3: select the Default branch as master. When you give this as master, as soon as there ia any commit happens to the master branch the pipeline will trigger.
+
+![alt text](https://github.com/samirparhi-dev/Assignment/blob/master/Scnario-1/Picture3.png?raw=true)
 
 Through YAML:
 ```yaml 
