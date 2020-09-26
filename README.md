@@ -12,4 +12,4 @@ You can find 2 folder named as :
 
 > Please use the github comment feature to provide your comment .
 
-> I frequently Use my github and you can expect the reply sooner to your comment . If ytou wish to get a faster reply connect me on `samirparhi@gmail.com`
+> I frequently Use my github and you can expect the reply sooner to your comment . If you wish to get a faster reply connect me on `samirparhi@gmail.com`
