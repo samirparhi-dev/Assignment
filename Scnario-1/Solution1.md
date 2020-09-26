@@ -10,7 +10,8 @@ The customer is planning to setup Azure DevOps service for below requirements:**
 
 ###### 1)	The build should trigger as soon as anyone in the dev team checks in code to master branch.
 
-Solution: (From GUI)
+**Solution:**
+From GUI
 
 Create a pipeline if not already there:
 
@@ -31,7 +32,7 @@ trigger:
 When you specify master under the trigger section of YAML configuration file it will take that as a branch to trigger a pipeline 
 ###### 2)	There will be test projects which will create and maintained in the solution along the Web and API. The trigger should build all the 3 projects - Web, API and test.
 The build should not be successful if any test fails.
-
+**Solution:**
 Through YAML:
 ```yaml 
               stages:
@@ -43,6 +44,7 @@ Through YAML:
 ```
    
 ###### 3)	The deployment of code and artifacts should be automated to Dev environment. 
+**Solution:**
 * Step-1: Create an environment in the azure pipeline, if not there as follows (Choose virtual Machine or Kubernetes) :
  
 
@@ -69,7 +71,7 @@ stages:
  ```
 
 ###### 4)	Upon successful deployment to the Dev environment, deployment should be easily promoted to QA and Prod through automated process.
-
+**Solution:**
 ```yaml
 - stage: Test deployment
       dependsOn: Dev deployment
@@ -90,6 +92,7 @@ stages:
  ```
 
 ###### 5)	The deployments to QA and Prod should be enabled with Approvals from approvers only.
+**Solution:**
 You have to define the deployment approval in the tool , providing the required approver . so that it can be progressed through various stages once the approval is provided in the Azure devOps tool
 
-******************************************************************End Of Document********************************************************************************
+******************************************************************End Of Document***************************************************
