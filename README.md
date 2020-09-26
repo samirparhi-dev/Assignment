@@ -15,7 +15,7 @@ Please use the github comment feature to provide your comments.
 
 I frequently Use my github and you can expect the reply sooner to your comment . If you wish to get a faster reply connect me on `samirparhi@gmail.com`
 
-### :warning::no_entry: Note : Please Do not change any formatting applied here.Connect me for any changes. :no_entry:
+### :warning::no_entry: Note : Please Do not change any formatting applied here.Connect me for any changes. :no_entry::warning:
 
 
                                                       **Thank You**
