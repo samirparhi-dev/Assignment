@@ -16,5 +16,5 @@ Please use the github comment feature to provide your comments.
 I frequently Use my github and you can expect the reply sooner to your comment . If you wish to get a faster reply connect me on `samirparhi@gmail.com`
 
 
-                                                                  **Thank You**
+                                                      **Thank You**
 
