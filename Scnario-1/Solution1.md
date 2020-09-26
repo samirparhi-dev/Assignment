@@ -27,8 +27,6 @@ Create a pipeline if not already there:
  
 * Step 3: select the Default branch as master. When you give this as master, as soon as there ia any commit happens to the master branch the pipeline will trigger.
 
-![alt text](https://github.com/samirparhi-dev/Assignment/blob/master/Scnario-1/Picture3.png?raw=true)
-
 Through YAML:
 ```yaml 
 trigger:
@@ -55,9 +53,14 @@ Through YAML:
 * Step-1: Create an environment in the azure pipeline, if not there as follows (Choose virtual Machine or Kubernetes) :
  
 
+![alt text](https://github.com/samirparhi-dev/Assignment/blob/master/Scnario-1/Picture3.png?raw=true)
 
-* Step-2: Then run the registration script
-Example (for linux hosts) : mkdir azagent;cd azagent;curl -fkSL -o vstsagent.tar.gz https://vstsagentpackage.azureedge.net/agent/2.174.1/vsts-agent-linux-x64-2.174.1.tar.gz;tar -zxvf vstsagent.tar.gz; if [ -x "$(command -v systemctl)" ]; then ./config.sh --environment --environmentname "DEV" --acceptteeeula --agent $HOSTNAME --url https://dev.azure.com/samirparhi/ --work _work --projectname 'samirparhi' --auth PAT --token qauzg53nmqo4jtmxzupeeqplab6uk5p3ng5qkkypdcr34lywfuva --runasservice; sudo ./svc.sh install; sudo ./svc.sh start; else ./config.sh --environment --environmentname "DEV" --acceptteeeula --agent $HOSTNAME --url https://dev.azure.com/samirparhi/ --work _work --projectname 'samirparhi' --auth PAT --token qauzg53nmqo4jtmxzupeeqplab6uk5p3ng5qkkypdcr34lywfuva; ./run.sh; fi
+* Step-2: Then run the registration script.
+
+Example (for linux hosts) : 
+```
+mkdir azagent;cd azagent;curl -fkSL -o vstsagent.tar.gz https://vstsagentpackage.azureedge.net/agent/2.174.1/vsts-agent-linux-x64-2.174.1.tar.gz;tar -zxvf vstsagent.tar.gz; if [ -x "$(command -v systemctl)" ]; then ./config.sh --environment --environmentname "DEV" --acceptteeeula --agent $HOSTNAME --url https://dev.azure.com/samirparhi/ --work _work --projectname 'samirparhi' --auth PAT --token qauzg53nmqo4jtmxzupeeqplab6uk5p3ng5qkkypdcr34lywfuva --runasservice; sudo ./svc.sh install; sudo ./svc.sh start; else ./config.sh --environment --environmentname "DEV" --acceptteeeula --agent $HOSTNAME --url https://dev.azure.com/samirparhi/ --work _work --projectname 'samirparhi' --auth PAT --token qauzg53nmqo4jtmxzupeeqplab6uk5p3ng5qkkypdcr34lywfuva; ./run.sh; fi
+```
  * Step-3: Once VM is registered, it will start appearing as an environment resource
 * Step -4: Deploy through YAML:
 
