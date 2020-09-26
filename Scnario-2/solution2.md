@@ -41,7 +41,9 @@ All the passwords are stored in a Azure Service known as key Vault. The deployme
 * c. Create Access Policies for this secret  by adding an User , which you want to give access
 * d. Enable Arm Access by going to advanced policies , so that ARM template can access it
 * e. Declare the “adminPassword” parameter as a secure string type in the Arm template. 
+
 Example:
+
 ```json
 "adminPassword": {
       "type": "securestring",
@@ -51,9 +53,10 @@ Example:
       }
     },
 ```
-f.  Create a parameter file to access the key value:
+* f.  Create a parameter file to access the key value:
 
 Example :
+
 ```json
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
@@ -68,7 +71,7 @@ Example :
       }
     }
 ```
-g. run the below command in the Azure CLI to include parameter template in the Arm template:
+* g. run the below command in the Azure CLI to include parameter template in the Arm template:
 
 `New-AzureRmResourceGroupDeployment -Name ExampleDeployment -ResourceGroupName TestEnv -TemplateFile .\ArmTemplateFile.json -TemplateParameterFile .\ArmParametersFile.json`
 
