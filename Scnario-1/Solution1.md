@@ -34,9 +34,9 @@ Through YAML:
               stages:
               - stage: Web
                 dependsOn: test
-             - stage: API
-               dependsOn: test
-            - stage: test
+              - stage: API
+                dependsOn: test
+              - stage: test
 ```
    
 ###### 3)	The deployment of code and artifacts should be automated to Dev environment. 
