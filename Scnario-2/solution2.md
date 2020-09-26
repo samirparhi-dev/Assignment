@@ -73,5 +73,7 @@ Example :
 ```
 * g. run the below command in the Azure CLI to include parameter template in the Arm template:
 
-```New-AzureRmResourceGroupDeployment -Name ExampleDeployment -ResourceGroupName TestEnv -TemplateFile .\ArmTemplateFile.json -TemplateParameterFile .\ArmParametersFile.json```
+```shell
+New-AzureRmResourceGroupDeployment -Name ExampleDeployment -ResourceGroupName TestEnv -TemplateFile .\ArmTemplateFile.json -TemplateParameterFile .\ArmParametersFile.json
+```
 
